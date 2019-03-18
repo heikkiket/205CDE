@@ -1,4 +1,4 @@
-# Git-muistiinpanoni
+# Git-muistiinpanoni v. 1.1
 
 Olin jo aiemmin tehnyt asetukset niin, että nimeni ja sähköpostini toimii
 kuten pitää.
