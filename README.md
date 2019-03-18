@@ -17,3 +17,4 @@ Paikalliseen git-projektiin voi helposti lisätä tiedostoja:
   2. git commit
   3. Poistu rakennuksesta
   
+Viimeiset muutokset README:hen
