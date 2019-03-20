@@ -73,3 +73,6 @@ Thumbs.db
 
 # codio files
 *.codio
+
+# PHPStorm files
+.idea
