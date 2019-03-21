@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=VT323');
+
+body {
+    background: cornflowerblue;
+    color: cornflowerblue;
+    margin: 60px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+article {
+    background: darkslateblue;
+    padding: 60px;
+}
+
+strong {
+    letter-spacing: 2px;
+    color: ghostwhite;
+}
+
+table, td, tr {
+    border: 2px solid cornflowerblue;
+}
+
+td {
+    padding: 3px;
+}
+
+table caption {
+    margin: 30px 0 20px;
+}
+
+a {
+    color: red;
+}
+
+a:hover {
+    color: hotpink;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'VT323', monospace;
+    margin: 0;
+}
+
+h1 {
+    font-size: 7em;
+}
+
+h2 {
+    font-size: 3em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+li:hover {
+    color: white;
+}
+
+figure {
+    font-size: 80%;
+}
