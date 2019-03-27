@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table caption {
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+}
+
+td {
+    padding: 0 0.5em;
+}
+
+thead {
+    background: red;
+    color: white;
+    border-top: 2px solid gray;
+
+}
+
+th:first-child, tbody td:first-child {
+    font-weight: bold;
+    border-right: 1px solid black;
+}
+
+tr:nth-child(even) {
+    background: #eee;
+}

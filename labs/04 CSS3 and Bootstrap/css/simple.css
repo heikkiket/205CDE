@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, Verdana, sans-serif;
+    background: linear-gradient(to right, red, green);
+}
+
+h1, h2 {
+    color: blue;
+    font-weight: bold;
+    border-bottom: 1px dashed gray;
+}
+
+a {
+    color: red;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul, ol {
+    border: 2px solid lawngreen;
+    padding: 2em;
+    max-width: 500px;
+    background: cadetblue;
+}
+
+ul:hover, ol:hover {
+    transform: rotate(45deg);
+}
+
+h1 {
+    font-size: 4.0em;
+}
+
+ul, ol {
+    font-size: 0.8em;
+}
+
+.copyright_notice {
+    font-size: 0.8em;
+}
+
+#special {
+    font-size: 0.8em;
+    color: yellowgreen;
+    font-style: italic;
+    border-left: 2px solid black;
+    margin-left: 40px;
+    padding-left: 10px;
+}
+
+code {
+    display: block;
+    white-space: pre;
+    background: mediumslateblue;
+    color: darkslateblue;
+    max-width: 300px;
+    margin: 3em;
+    padding: 0.5em 2.5em;
+}
+p::first-letter {
+    font-size:8em;
+}
+
+p::first-line {
+    font-weight: bold;
+}

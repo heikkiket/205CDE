@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, "Liberation Sans", sans-serif;
+    width: 100%;
+}
+
+h1, figure, img, figcaption, ul {
+    text-align: center;
+}
+
+figure img {
+    border: 2px solid dodgerblue;
+}
+
+figcaption {
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+ul {
+    max-width: 250px;
+    margin: 3em auto 2em;
+}
+
+li {
+    list-style-type: none;
+    padding:1em 0;
+    margin:0;
+    border-top: 1px solid black;
+}
+
+li h2 {
+    font-size: 2em;
+    font-weight: 100;
+    margin: 0;
+}
+
+li p {
+    font-style: italic;
+    margin: 0;
+}
+
+.blueberry {
+    background: lightblue;
+}
+
+.cloudberry {
+    background: lightgoldenrodyellow;
+}
+
+.lingonberry {
+    background: indianred;
+}

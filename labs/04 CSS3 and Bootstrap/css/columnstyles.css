@@ -1,0 +1,7 @@
+body {
+    padding: 5em;
+    background: #FcFaFa;
+
+    column-count: 3;
+    column-gap: 2.5em;
+}
