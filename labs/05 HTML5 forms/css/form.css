@@ -1,0 +1,28 @@
+form {
+    margin-left: 2em;
+}
+input, textarea, select {
+    margin-left: 1em;
+    display: block;
+}
+
+label {
+    margin-top: 2em;
+    padding-right: 2em;
+}
+
+fieldset {
+    margin-bottom: 2em;
+}
+
+input[type=submit] {
+    background: #0b77b7;
+    color: white;
+    font-size: 1.5em;
+    border-radius: 5px;
+}
+
+input[type=submit]:hover {
+    background: #5Bb3bF;
+    border: 1px solid lightblue;
+}

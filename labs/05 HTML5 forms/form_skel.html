@@ -6,52 +6,62 @@
 	<head>
 		<meta charset="utf-8"/>
 		<title>Demonstrating HTML forms</title>
+		<link rel="stylesheet" type="text/css" href="css/form.css" />
 	</head>
 	
 	<body>
 		<h1>Turnitin</h1>
 		<form  lang="fi" action="">
 			<div>
-				Name: <input type="text" name="studentname"/>
+				<label>Name: <input type="text" name="studentname"></label>
 			</div>
 			<div>
-				Student id: <input type="text" name="id"  />
+				<label>Student id: <input type="text" name="id" pattern="18007\d{2}" placeholder="1800723" oninvalid="this.setCustomValidity('Syötä opiskelijanumero oikeassa muodossa')"></label>
 			</div>
 			<div>
-				Email:
-				<!--
-				Make an input named "email"
-				-->
+				<label>Email: <input type="email" name="email" oninvalid="this.setCustomValidity('Pätö virheen takkii jäi lomake laettamatta!')"></label>
 			</div>
 			<div>
-				Assignment:
-				<!--
-				Make an input named "assignment"
-				-->
+				<label>Assignment: <input type="text" name="assignment"></label>
+
 				
 			</div>
 
 			<div>
-				Code:
+				<label>Code:<textarea name="code"></textarea></label>
 				<!--
 				Make an input named "code" which is a text area to put student's code into.
 				-->
 				
 			</div>
 			<div>
-				Cheat:
+				<label>Cheat:<input type="checkbox" name="cheat"></label>
 			<!--
 				Make an input named "cheat" which is a check box the student must check.
 			-->
 			</div>
 			<div>
 				Pay:
+				<fieldset>
+					<legend>Credit card</legend>
+				<label><input type="radio" name="payment" value="visa">Visa<br></label>
+				<label><input type="radio" name="payment" value="paypal">Paypal<br></label>
+				<label><input type="radio" name="payment" value="mastercard">Mastercard<br></label>
+				</fieldset>
 			<!--
 				Make an input named "payment" which is a radio box with possible values of visa, paypal, mastercard
 			-->
 			</div>
 			<div>
-				Score:
+				<label>Score:
+					<select>
+						<option value="1">5</option>
+						<option value="2">4</option>
+						<option value="3">3</option>
+						<option value="4">2</option>
+						<option value="5">1</option>
+					</select>
+				</label>
 			<!--
 				Make an input named "score" which is a list of choices for the score 
 			-->
