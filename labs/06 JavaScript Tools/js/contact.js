@@ -18,7 +18,8 @@ function process() {
     if(!name || !name.value
     || name.value.length < 3
     || name.value.length > 100
-    || name.value.indexOf(' ') == -1) {
+    || name.value.indexOf(' ') >= name.value.length
+    || name.value.indexOf(' ') == 0) {
         okay = false;
         alert('Please enter a valid name!')
     }

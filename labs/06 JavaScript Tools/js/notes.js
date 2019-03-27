@@ -6,9 +6,21 @@ function addItem() {
 	var itemText = textbox.value;
 	textbox.value = '';
 	textbox.focus();
-	var newItem = {title: itemText, quantity: 1};
-	notes.push(newItem);
+	var isNew = true;
+	for(var i = 0; i < notes.length; i++) {
+		if(notes[i].title === itemText) {
+			notes[i].quantity++;
+			isNew = false;
+		}
+	}
+
+	if(isNew) {
+		var newItem = {title: itemText, quantity: 1};
+		notes.push(newItem);
+	}
+
 	displayList();
+	saveList();
 }
 
 function displayList() {
@@ -29,5 +41,19 @@ function deleteIndex(i) {
 	displayList();
 }
 
+function saveList() {
+	localStorage.notes = JSON.stringify(notes);
+}
+
+function loadList() {
+	console.log('loadList');
+	if (localStorage.notes) {
+		notes = JSON.parse(localStorage.notes);
+		displayList();
+	}
+}
+
 button = document.getElementById('add');
 button.onclick = addItem;
+
+loadList();
